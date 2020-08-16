@@ -1,0 +1,51 @@
+{
+  "name": "MyROS",
+  "author": "Balamurugan Kandan",
+  "version": "1.0.0",
+  "description": "Robot Server",
+  "contributors": [
+    {
+      "name": "Balamurugan Kandan",
+      "email": "balagct@gmail.com"
+    }
+  ],
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "aa": "*",
+    "body-parser": "*",
+    "connect-redis": "*",
+    "cookie-parser": "*",
+    "credential": "*",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "file-stream-rotator": "*",
+    "fs-readfile-promise": "*",
+    "knex": "*",
+    "mkdir-recursive": "*",
+    "mkdirp": "^1.0.4",
+    "morgan": "*",
+    "nodemon": "^2.0.3",
+    "pg": "*",
+    "pg-promise": "*",
+    "redis": "*",
+    "rimraf": "*",
+    "uuid": "*",
+    "winston": "*",
+    "ws": "^7.2.1"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "preferGlobal": false,
+  "publishConfig": {
+    "registry": ""
+  },
+  "subdomain": "www",
+  "analyze": false
+}

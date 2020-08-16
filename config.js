@@ -1,0 +1,35 @@
+"use strict";
+
+module.exports = {
+	"servername" : "ROS Server",
+	"session_cookie_expire" : 18000000,
+	"session_cookie_secret" : "Fxgj2MpBcJ7K1n4LQV4pOnpFBK37ccSY",
+	"session_key" : "SessionID",
+	"session_saveUninitialized" : false,
+	"session_resave" : false,
+	"session_rolling" : true,
+	"session_secure" : false,
+	"session_httpOnly" : true,
+	"redis_server" : "localhost",
+	"redis_server_password" : "",
+	"redis_server_port" : 6379,
+	"redis_server_prefix" : "myros:_",
+	"redis_server_ttl" : 18000000,
+	"bodyParser_extended" : true,
+	"webserver_host" : "localhost",
+	"webserver_port" : 8080,
+	"sql_username" : "myros",
+	"sql_password" : "",
+	"sql_host" : "localhost",
+	"sql_port" : 5432,
+	"sql_database" : "myros",
+	"sql_scheme" : "myros",
+	"logPath" : "/log",
+	"logFile" : "access-%DATE%.log",
+	"logFrequency" : "daily",
+	"logVerbose" : false,
+	"logDateFormat" : "YYYY-MM-DD",
+	"logging" : "dev", // dev = development, common = standard
+	"ros_master" : "ros-master",
+	"ros_port" : "9090"
+}
