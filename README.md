@@ -23,3 +23,13 @@ Websocket must be started in robot using the below mentioned command in ROS. Thi
 Tha web application can be opened using http://<ip_address>:3000. 
   * Software joystick available bottom right can be used to drive the robot.
   * Robot movement shown by the marker.
+
+# GUI
+
+Desktop layout
+
+![alt text](https://github.com/balamuruganky/nodejs_rosgps/blob/master/screen_shot/ros_robot.png?raw=true)
+
+Mobile layout
+
+![alt text](https://github.com/balamuruganky/nodejs_rosgps/blob/master/screen_shot/ros_robot_1.png?raw=true)
