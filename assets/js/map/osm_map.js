@@ -14,7 +14,7 @@
     	$.extend(_params, config);
 	    _oGpsFixTopic = new RosTopic({
 	        $rosConn: _params.$rosObj,
-	        $name: '/ublox_gps/fix',
+	        $name: '/gps/fix',
 	        $messageType: 'sensor_msgs/NavSatFix'
 	    });
 	    _getLocation().then(_initMap);

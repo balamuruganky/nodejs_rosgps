@@ -16,7 +16,7 @@ $( document ).ready(function() {
 
 var _mapInit = function() {
 	var oRosConnect = new RosConnection({
-		$serverUri  : "192.168.1.64",
+		$serverUri  : "localhost",
 		$serverPort : "9090",
 		$reconnectInterval : 10
 	});
