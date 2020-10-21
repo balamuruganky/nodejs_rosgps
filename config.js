@@ -31,5 +31,6 @@ module.exports = {
 	"logDateFormat" : "YYYY-MM-DD",
 	"logging" : "dev", // dev = development, common = standard
 	"ros_master" : "localhost",
-	"ros_port" : "9090"
+	"ros_port" : "9090",
+	"network_interface": "enp0s3"
 }

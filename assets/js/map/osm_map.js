@@ -30,6 +30,7 @@
 		}).addTo($map);
 		
 		$map.setView([Global.gpsLocation.lat, Global.gpsLocation.lon], 18);
+		$map.zoomControl.setPosition('topright');
 		$marker = L.marker([Global.gpsLocation.lat, Global.gpsLocation.lon]).addTo($map)
 		    //.bindPopup(Global.lat + ' ' + Global.lon)
 		    .openPopup();
@@ -37,7 +38,7 @@
 		new L.Toolbar2.Control({
             actions: [_zoomAction]
         }).addTo($map);
-	}
+	};
 
 	var _getGPSLocation = function (data) {
     	if ($marker) {

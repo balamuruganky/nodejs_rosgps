@@ -112,6 +112,31 @@ server.get('/test', function (req,res){
 	res.json({status: 'online'});
 });
 
+const { networkInterfaces } = require('os');
+
+const nets = networkInterfaces();
+const results = Object.create(null); // or just '{}', an empty object
+
+var os = require('os');
+
+var interfaces = os.networkInterfaces();
+var addresses = [];
+for (var k in interfaces) {
+    for (var k2 in interfaces[k]) {
+        var address = interfaces[k][k2];
+        if (address.family === 'IPv4' && !address.internal) {
+            addresses.push(address.address);
+        }
+    }
+}
+
+console.log(addresses);
+let IPAddress = addresses[0];
+
+server.get('/ipaddress', function(req, res) {
+    res.send(IPAddress);
+});
+
 //Routes
 server.use('/', Index); // Index
 

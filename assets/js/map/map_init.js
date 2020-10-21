@@ -16,14 +16,14 @@ $( document ).ready(function() {
 
 var _mapInit = function() {
 	var oRosConnect = new RosConnection({
-		$serverUri  : "localhost",
+		$serverUri  : Global.ip_address,
 		$serverPort : "9090",
 		$reconnectInterval : 10
 	});
 
     if (oRosConnect != null) {
         var _connectCallbackFn = function() { 
-          	console.log ("ROS connected"); 
+			console.log("GPS connected");
 			var oJoyStickTwist = new JoyStickTwist({
 				$rosObj         : oRosConnect,
 				$color			: '#2F4F4F',
@@ -40,7 +40,7 @@ var _mapInit = function() {
     			setInterval(oOsmMap.getLocation, 100);
         };
         var _disconnectCallbackFn = function() { 
-          console.log ("ROS disconnected"); 
+          console.log("GPS disconnected");
         };
         oRosConnect.registerRosConnectedCallbackFn(_connectCallbackFn);
         oRosConnect.registerRosDisconnectedCallbackFn(_disconnectCallbackFn);

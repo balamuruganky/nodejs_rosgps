@@ -19,5 +19,18 @@ var Global = {};
     };
 })(jQuery, document, window);
 
-
 Global.gpsLocation = {lat : "0.0", lon : "0.0"};
+Global.ip_address = "localhost";
+//
+// Update ip_address variable
+//
+$.ajax({
+    'async': false,
+    'type': "GET",
+    'global': false,
+    'url': "/ipaddress",
+    'success': function (data) {
+        Global.ip_address = data;
+    }
+});
+
